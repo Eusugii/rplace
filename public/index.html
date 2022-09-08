@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>LPU-L P-Art</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="/js/place.js"></script>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="controls">
+      X: <input type="number" min="0" max="75" id="x-coord" value="1" />
+      <br />
+      Y: <input type="number" min="0" max="50" id="y-coord" value="1" />
+      <br />
+      Color: <input type="color" id="color" />
+      <br />
+      <button id="submit">Place Color</button>
+    </div>
+    <br />
+    <canvas id="place" height="750" width="750"></canvas>
+  </body>
+</html>
